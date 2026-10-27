@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吴嘉琪 Jiaqi Wu | 个人简介 · 涉外商务拓展 · 外贸业务 · 涉外口笔译</title>
+  <meta name="description" content="吴嘉琪的个人简介网站。英语专八、三江学院英语语言文学学士。专注外贸业务员、海外商务拓展(Overseas BD)、涉外口笔译与 AI 智能外贸工作流。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+
+:root {
+  --color-forest-deep: #064e3b;
+  --color-forest-dark: #065f46;
+  --color-primary: #10b981;
+  --color-primary-light: #34d399;
+  --color-primary-pale: #ecfdf5;
+  --color-accent-lime: #22c55e;
+  --color-accent-warm: #f59e0b;
+  --color-accent-soft: #fef3c7;
+  --color-bg-base: #fbfbf7;
+  --color-bg-alt: #f4f7f1;
+  --color-bg-card: rgba(255, 255, 255, 0.82);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.95);
+  --color-border-card: rgba(16, 185, 129, 0.18);
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+  --color-text-main: #192a20;
+  --color-text-body: #334d3f;
+  --color-text-muted: #627d6e;
+  --color-text-light: #8da497;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(16, 185, 129, 0.06);
+  --shadow-md: 0 8px 24px -4px rgba(16, 185, 129, 0.12), 0 2px 8px rgba(0,0,0,0.03);
+  --shadow-lg: 0 16px 36px -6px rgba(16, 185, 129, 0.18), 0 4px 14px rgba(0,0,0,0.04);
+  --shadow-glow: 0 0 35px rgba(34, 197, 94, 0.25);
+  --transition-fast: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Noto Sans SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  line-height: 1.68;
+  background: var(--color-bg-base);
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(34, 197, 94, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 88% 25%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 70%, rgba(52, 211, 153, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 90%, rgba(254, 243, 199, 0.5) 0%, transparent 40%);
+  background-attachment: fixed;
+  color: var(--color-text-body);
+  position: relative;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* Custom Forest Cursor */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent-lime);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out, background-color 0.2s;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+}
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid rgba(16, 185, 129, 0.45);
+  background: rgba(34, 197, 94, 0.04);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.22s cubic-bezier(0.18, 0.89, 0.32, 1.28), width 0.3s ease, height 0.3s ease, border-color 0.3s;
+}
+.cursor-hover .custom-cursor-ring {
+  width: 52px;
+  height: 52px;
+  border-color: rgba(34, 197, 94, 0.85);
+  background: rgba(34, 197, 94, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+/* Canvas Background for falling leaves */
+#leaves-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  width: 0%;
+  background: linear-gradient(90deg, #10b981, #22c55e, #34d399, #f59e0b);
+  z-index: 10000;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  transition: width 0.1s ease-out;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, .serif-font {
+  font-family: 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', Georgia, serif;
+  color: var(--color-text-main);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Navigation Header */
+.site-header {
+  position: sticky;
+  top: 18px;
+  z-index: 1000;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 16px;
+  transition: all 0.3s ease;
+}
+.nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 28px -6px rgba(16, 185, 129, 0.12), 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-forest-deep);
+  font-weight: 700;
+  font-size: 1.12rem;
+  letter-spacing: 0.02em;
+}
+.nav-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #22c55e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  animation: pulseGentle 3.5s ease-in-out infinite;
+}
+.nav-logo-text span {
+  font-size: 0.78rem;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  margin-left: 6px;
+  padding: 2px 8px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+.nav-link {
+  display: inline-block;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--color-forest-deep);
+  background: rgba(34, 197, 94, 0.12);
+  font-weight: 600;
+  transform: translateY(-1px);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sound-btn {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: var(--color-forest-dark);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.sound-btn:hover {
+  background: rgba(16, 185, 129, 0.18);
+  transform: scale(1.03);
+}
+.sound-btn.playing {
+  background: linear-gradient(135deg, #10b981, #22c55e);
+  color: white;
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+}
+.nav-contact-btn {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 7px 18px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.28);
+  transition: all var(--transition-fast);
+}
+.nav-contact-btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #047857, #059669);
+}
+
+/* Common Section Header */
+.section-wrapper {
+  padding: 85px 0;
+  position: relative;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  border-radius: var(--radius-full);
+  color: var(--color-forest-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-size: 2.15rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 12px;
+}
+.section-desc {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Glassmorphism Card Base */
+.glass-card {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  border-color: rgba(34, 197, 94, 0.42);
+}
+.card-glow-decor {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+
+/* ------------------------------------------------------------------
+   01 个人基本信息 HERO SECTION
+------------------------------------------------------------------ */
+.hero-wrapper {
+  padding: 40px 0 60px;
+  position: relative;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  border-radius: var(--radius-full);
+  color: var(--color-forest-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.hero-pill-badge .pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--color-accent-lime);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+  animation: pulseGentle 2s infinite;
+}
+.hero-name-row {
+  margin-bottom: 12px;
+}
+.hero-name {
+  font-size: 3.4rem;
+  line-height: 1.12;
+  color: var(--color-forest-deep);
+  display: inline-block;
+  margin-right: 14px;
+}
+.hero-name-en {
+  font-size: 1.45rem;
+  color: var(--color-primary-dark);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
+.hero-slogan {
+  font-size: 1.32rem;
+  font-weight: 600;
+  color: var(--color-forest-dark);
+  margin-bottom: 16px;
+  line-height: 1.45;
+  font-family: 'Noto Serif SC', serif;
+}
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.hero-role-tag {
+  background: white;
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-forest-deep);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  transition: all var(--transition-fast);
+}
+.hero-role-tag:hover {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.5);
+  transform: translateY(-2px);
+}
+.hero-meta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: var(--radius-md);
+}
+.hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--color-text-body);
+}
+.hero-meta-item strong {
+  color: var(--color-forest-deep);
+}
+.hero-meta-divider {
+  color: rgba(0,0,0,0.18);
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #22c55e 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.96rem;
+  padding: 12px 26px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 22px rgba(16, 185, 129, 0.32);
+  transition: all var(--transition-fast);
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(16, 185, 129, 0.45);
+  filter: brightness(1.05);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--color-forest-deep);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.96rem;
+  padding: 12px 22px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.6);
+  transform: translateY(-2px);
+}
+.contact-fast-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.copy-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px dashed rgba(16, 185, 129, 0.35);
+  padding: 7px 15px;
+  border-radius: var(--radius-full);
+  font-size: 0.84rem;
+  color: var(--color-forest-dark);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.copy-chip:hover {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: var(--color-accent-lime);
+  transform: scale(1.02);
+}
+.copy-chip-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Hero Right: Botanical Showcase & Metrics */
+.hero-visual-card {
+  padding: 30px;
+  position: relative;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85) 0%, rgba(236, 253, 245, 0.7) 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+.botanical-avatar-wrap {
+  text-align: center;
+  position: relative;
+  margin-bottom: 28px;
+}
+.botanical-ring {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #10b981, #22c55e, #fef08a, #34d399);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.28);
+  animation: rotateGradient 12s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botanical-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--color-forest-deep);
+  font-weight: 700;
+  font-family: 'Noto Serif SC', serif;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.06);
+}
+.botanical-leaf-badge {
+  position: absolute;
+  top: -6px;
+  right: calc(50% - 75px);
+  background: #ffffff;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--color-forest-dark);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.metrics-grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.metric-box {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.16);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+.metric-box:hover {
+  background: white;
+  border-color: rgba(34, 197, 94, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(16, 185, 129, 0.12);
+}
+.metric-number {
+  font-size: 1.7rem;
+  font-weight: 800;
+  font-family: 'Noto Serif SC', serif;
+  background: linear-gradient(135deg, #059669 0%, #10b981 60%, #22c55e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.metric-label {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------
+   02 教育背景 EDUCATION SECTION
+------------------------------------------------------------------ */
+.edu-main-card {
+  padding: 38px;
+  margin-bottom: 26px;
+}
+.edu-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px dashed rgba(16, 185, 129, 0.22);
+  margin-bottom: 24px;
+}
+.edu-school-name {
+  font-size: 1.8rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 6px;
+}
+.edu-college-major {
+  font-size: 1.05rem;
+  color: var(--color-forest-dark);
+  font-weight: 500;
+}
+.edu-time-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background: rgba(16, 185, 129, 0.12);
+  border-radius: var(--radius-full);
+  color: var(--color-forest-deep);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.edu-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.edu-stat-card {
+  background: linear-gradient(145deg, #ffffff, #f7faf5);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+.edu-stat-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  margin-bottom: 4px;
+}
+.edu-stat-desc {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+.edu-courses-block {
+  margin-top: 24px;
+}
+.block-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.course-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.course-tag {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-full);
+  padding: 5px 14px;
+  font-size: 0.84rem;
+  color: var(--color-text-body);
+  transition: all var(--transition-fast);
+}
+.course-tag:hover {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--color-forest-deep);
+  transform: translateY(-2px);
+}
+.edu-softskills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.softskill-card {
+  padding: 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+.softskill-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(34, 197, 94, 0.35);
+  box-shadow: var(--shadow-md);
+}
+.softskill-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-forest-dark);
+  margin-bottom: 14px;
+}
+.softskill-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+}
+.softskill-text {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------
+   03 工作实践与经历 PROFESSIONAL EXPERIENCE SECTION
+------------------------------------------------------------------ */
+.timeline-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.timeline-card {
+  padding: 36px;
+  border-left: 4px solid var(--color-primary);
+  position: relative;
+}
+.timeline-card.featured-exp {
+  border-left: 4px solid var(--color-accent-lime);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(240, 253, 244, 0.75) 100%);
+  border-top: 1px solid rgba(34, 197, 94, 0.3);
+  border-right: 1px solid rgba(34, 197, 94, 0.2);
+  border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+}
+.exp-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.exp-company {
+  font-size: 1.65rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 4px;
+}
+.exp-title-text {
+  font-size: 1.02rem;
+  color: var(--color-forest-dark);
+  font-weight: 600;
+}
+.exp-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 15px;
+  background: rgba(16, 185, 129, 0.12);
+  border-radius: var(--radius-full);
+  color: var(--color-forest-deep);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.exp-highlights-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+.exp-highlight-item {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  transition: all var(--transition-fast);
+}
+.exp-highlight-item:hover {
+  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.1);
+}
+.exp-hl-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.exp-hl-badge-tag {
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--color-forest-dark);
+  border-radius: 10px;
+  font-weight: 600;
+}
+.exp-hl-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-body);
+  line-height: 1.62;
+}
+
+/* ------------------------------------------------------------------
+   04 专业技能证书 SKILLS & CERTIFICATIONS SECTION
+------------------------------------------------------------------ */
+.skills-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.skill-category-card {
+  padding: 30px;
+}
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.16);
+}
+.skill-cat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(34, 197, 94, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-forest-dark);
+}
+.skill-cat-title {
+  font-size: 1.25rem;
+  color: var(--color-forest-deep);
+}
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(16, 185, 129, 0.12);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+.cert-item:hover {
+  background: white;
+  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateX(3px);
+}
+.cert-check {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+.cert-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+}
+.cert-detail {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* ------------------------------------------------------------------
+   05 核心竞争优势 CORE COMPETENCIES SECTION
+------------------------------------------------------------------ */
+.comp-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.comp-card {
+  padding: 34px 28px;
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.9) 0%, rgba(244, 250, 245, 0.8) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  position: relative;
+}
+.comp-num-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #10b981, #22c55e);
+  color: white;
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3);
+}
+.comp-title {
+  font-size: 1.28rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+.comp-text {
+  font-size: 0.88rem;
+  color: var(--color-text-body);
+  line-height: 1.68;
+}
+
+/* Bottom Contact & Collaboration Lounge */
+.collab-lounge-card {
+  padding: 44px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(236, 253, 245, 0.9) 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.28);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+.lounge-title {
+  font-size: 2rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 14px;
+}
+.lounge-quote {
+  font-size: 1.05rem;
+  color: var(--color-forest-dark);
+  font-family: 'Noto Serif SC', serif;
+  font-style: italic;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.lounge-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.lounge-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  background: white;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.lounge-contact-item:hover {
+  border-color: var(--color-accent-lime);
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.15);
+}
+.lounge-item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+}
+.lounge-item-label {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+.lounge-item-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+}
+
+/* Fast Form */
+.collab-form {
+  background: white;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: var(--shadow-sm);
+}
+.form-title {
+  font-size: 1.15rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.form-group {
+  margin-bottom: 14px;
+}
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-forest-dark);
+  margin-bottom: 5px;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--color-text-main);
+  background: #fdfdfb;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+  background: white;
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 75px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 40px 0 30px;
+  text-align: center;
+  border-top: 1px solid rgba(16, 185, 129, 0.14);
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+}
+.footer-text {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+.footer-tags {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--color-primary-dark);
+}
+
+/* Toast Notification */
+#toast-box {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(6, 78, 59, 0.94);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2), 0 0 20px rgba(34, 197, 94, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 0.3s;
+}
+#toast-box.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Keyframes */
+@keyframes pulseGentle {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+@keyframes rotateGradient {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .edu-highlights-grid { grid-template-columns: 1fr; }
+  .edu-softskills-grid { grid-template-columns: 1fr; }
+  .exp-highlights-list { grid-template-columns: 1fr; }
+  .skills-grid-4 { grid-template-columns: 1fr; }
+  .comp-grid-3 { grid-template-columns: 1fr; }
+  .collab-lounge-card { grid-template-columns: 1fr; }
+  .nav-menu { display: none; }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Cursor and Canvas Background -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+  <canvas id="leaves-canvas"></canvas>
+  <div id="scroll-progress"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="nav-shell">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </div>
+        <div class="nav-logo-text">
+          吴嘉琪 <span>Jiaqi Wu</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">01 个人基本信息</a></li>
+        <li><a href="#education" class="nav-link">02 教育背景</a></li>
+        <li><a href="#experience" class="nav-link">03 工作实践经历</a></li>
+        <li><a href="#skills" class="nav-link">04 专业技能证书</a></li>
+        <li><a href="#competencies" class="nav-link">05 核心竞争优势</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-btn" title="开启/静音治愈森系微风自然白噪音">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <span id="sound-btn-text">自然白噪音</span>
+        </button>
+        <a href="#contact-lounge" class="nav-contact-btn">合作洽谈</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main>
+    <!-- =================================================================
+         板块 1：个人基本信息 HERO & IDENTITY
+    ================================================================== -->
+    <section id="hero" class="hero-wrapper section-wrapper">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column -->
+          <div class="hero-info-col">
+            <div class="hero-badge-row">
+              <div class="hero-pill-badge">
+                <span class="pulse-dot"></span>
+                森系清新 · 充满生命力 · 开放涉外合作
+              </div>
+              <div class="hero-pill-badge">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                英语专八 (TEM-8) 高阶认证
+              </div>
+            </div>
+
+            <div class="hero-name-row">
+              <h1 class="hero-name">吴嘉琪</h1>
+              <span class="hero-name-en">Jiaqi Wu</span>
+            </div>
+
+            <div class="hero-slogan">
+              “以语言为桥，以数字为翼 · 构筑具有温韧力量的全球商贸连接”
+            </div>
+
+            <div class="hero-roles">
+              <span class="hero-role-tag">外贸业务员</span>
+              <span class="hero-role-tag">海外商务拓展 (Overseas BD)</span>
+              <span class="hero-role-tag">出海运营</span>
+              <span class="hero-role-tag">涉外口笔译</span>
+              <span class="hero-role-tag">AI 智能外贸工作流</span>
+            </div>
+
+            <div class="hero-meta-grid">
+              <div class="hero-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                <span><strong>25 岁</strong> (1999)</span>
+              </div>
+              <span class="hero-meta-divider">/</span>
+              <div class="hero-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span><strong>广东潮州</strong> (务实实干底色)</span>
+              </div>
+              <span class="hero-meta-divider">/</span>
+              <div class="hero-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span><strong>英语语言文学学士</strong> (全日制统招)</span>
+              </div>
+              <span class="hero-meta-divider">/</span>
+              <div class="hero-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span><strong>中共共青团员</strong></span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#experience" class="btn-primary">
+                <span>查看过往经历（详细版）</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+              </a>
+              <a href="#contact-lounge" class="btn-secondary">
+                <span>开启合作与洽谈</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <div class="contact-fast-chips">
+              <div class="copy-chip" onclick="copyText('19867005820', '电话/微信 19867005820 已复制到剪贴板！')" title="点击直接复制">
+                <svg class="copy-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>电话/微信：19867005820</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              </div>
+
+              <div class="copy-chip" onclick="copyText('2503420181@qq.com', '工作邮箱 2503420181@qq.com 已复制到剪贴板！')" title="点击直接复制">
+                <svg class="copy-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>邮箱：2503420181@qq.com</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="hero-visual-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="botanical-avatar-wrap">
+              <div class="botanical-ring">
+                <div class="botanical-inner">
+                  琪
+                </div>
+              </div>
+              <div class="botanical-leaf-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg>
+                森系灵动 · 自然纯粹
+              </div>
+            </div>
+
+            <!-- Key Metrics 2x2 -->
+            <div class="metrics-grid-2x2">
+              <div class="metric-box">
+                <div class="metric-number">10万+</div>
+                <div class="metric-label">外贸攻坚直接创收净利 (元)</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">50%+</div>
+                <div class="metric-label">AI工作流赋能人效提升</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">20+ 封</div>
+                <div class="metric-label">日均涉外商函与客情维护</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">100%</div>
+                <div class="metric-label">学术/商业翻译交付合格率</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         板块 2：教育背景 EDUCATION & ACADEMICS
+    ================================================================== -->
+    <section id="education" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            02 / ACADEMIC JOURNEY
+          </div>
+          <h2 class="section-title">教育背景与学术积淀</h2>
+          <p class="section-desc">扎实的外国语学术功底、系统的国际商贸与涉外沟通训练，沉淀出严谨求实与跨文化同理心</p>
+        </div>
+
+        <!-- Major Education Card -->
+        <div class="edu-main-card glass-card">
+          <div class="card-glow-decor"></div>
+          <div class="edu-head-row">
+            <div>
+              <h3 class="edu-school-name">三江学院</h3>
+              <div class="edu-college-major">外国语学院 · 英语语言文学专业 (全日制本科)</div>
+            </div>
+            <div class="edu-time-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>2020.09 - 2024.06</span>
+            </div>
+          </div>
+
+          <!-- Academic Highlights 3-col -->
+          <div class="edu-highlights-grid">
+            <div class="edu-stat-card">
+              <div class="edu-stat-val">GPA 4.1 / 5.0</div>
+              <div class="edu-stat-desc">专业成绩位列前 15%，理论与实践课兼优</div>
+            </div>
+            <div class="edu-stat-card">
+              <div class="edu-stat-val">综合二等奖学金</div>
+              <div class="edu-stat-desc">大学综合素质考评优异，学术功底扎实</div>
+            </div>
+            <div class="edu-stat-card">
+              <div class="edu-stat-val">校级优秀学生 (2次)</div>
+              <div class="edu-stat-desc">获评校级优秀学生及“三好学生”荣誉称号</div>
+            </div>
+          </div>
+
+          <!-- Core Coursework -->
+          <div class="edu-courses-block">
+            <div class="block-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              <span>9 大核心专业课程群</span>
+            </div>
+            <div class="course-tags-wrap">
+              <span class="course-tag">商务英语 (Business English)</span>
+              <span class="course-tag">商务笔译 (Business Translation)</span>
+              <span class="course-tag">口译实践 (Interpreting Practice)</span>
+              <span class="course-tag">跨文化交际 (Intercultural Comm.)</span>
+              <span class="course-tag">国际贸易函电 (Foreign Trade Corresp.)</span>
+              <span class="course-tag">语言学导论 (Linguistics)</span>
+              <span class="course-tag">二外日语 (Japanese as Second Foreign Lang.)</span>
+              <span class="course-tag">高级英语写作 (Advanced Writing)</span>
+              <span class="course-tag">英美文学史 (Literature & Culture)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Soft Skills & Core Temperament 3-col -->
+        <div class="edu-softskills-grid">
+          <div class="softskill-card">
+            <div class="softskill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5Z"/><path d="m8.5 8.5 7 7"/></svg>
+            </div>
+            <h4 class="softskill-title">潮汕务实诚信底色</h4>
+            <p class="softskill-text">生长于广东潮州，骨子里兼具开拓韧劲与诚信经商基因。注重言行合一与商业履约，面对陌生市场与客户诉求沉着务实、亲和力强。</p>
+          </div>
+
+          <div class="softskill-card">
+            <div class="softskill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+            </div>
+            <h4 class="softskill-title">班级宣传委员组织力</h4>
+            <p class="softskill-text">在校期间连任班级宣传委员，主导多项文案策划与视觉设计，具备高度敏锐的同理心、活动策划与团队跨职能协作协调能力。</p>
+          </div>
+
+          <div class="softskill-card">
+            <div class="softskill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4"/><path d="M12 16V8"/></svg>
+            </div>
+            <h4 class="softskill-title">越野跑耐力与抗压力</h4>
+            <p class="softskill-text">长期坚持越野跑运动，具备极佳的自律与逆境复原力。善于在长周期、高难度的海外客户攻坚与谈判拉锯中保持沉着与专注。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         板块 3：工作实践与经历 PROFESSIONAL EXPERIENCE
+    ================================================================== -->
+    <section id="experience" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            03 / PROFESSIONAL EXPERIENCE
+          </div>
+          <h2 class="section-title">工作实践与经历（详细版）</h2>
+          <p class="section-desc">从海事船舶重工的跨界破局成单，到高规格交传口译与 AI 数字外贸工作流的创新落地</p>
+        </div>
+
+        <div class="timeline-list">
+          <!-- 经历一：丰景船舶服务有限公司 (核心高光) -->
+          <div class="timeline-card glass-card featured-exp">
+            <div class="card-glow-decor"></div>
+            <div class="exp-head-row">
+              <div>
+                <h3 class="exp-company">丰景船舶服务有限公司</h3>
+                <div class="exp-title-text">外贸业务员 / 涉外商务拓展 (Overseas BD)</div>
+              </div>
+              <div class="exp-date-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                <span>2024.08 - 2026.03</span>
+              </div>
+            </div>
+
+            <!-- 4 大业务攻坚支柱 -->
+            <div class="exp-highlights-list">
+              <!-- Pillar 1 -->
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>业务攻坚与业绩创收</span>
+                  <span class="exp-hl-badge-tag">利润突破 10万+</span>
+                </div>
+                <p class="exp-hl-desc">快速吃透高技术门槛的船舶油污水航运领域，独立负责海外船东及外商全链路开发谈判，促成多项核心国际合作，<strong>为公司直接创收逾 10 万元净利润</strong>。</p>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                  <span>高规格现场交传口译</span>
+                  <span class="exp-hl-badge-tag">首席中英口译</span>
+                </div>
+                <p class="exp-hl-desc">在外商来访验厂、仓库技术安全审核、高层商业签约等关键场景担任首席现场中英口译员，确保技术参数、海事环保规范与商业条款准确传达，高效化解分歧促成合作。</p>
+              </div>
+
+              <!-- Pillar 3 -->
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <span>涉外客情与全英商函</span>
+                  <span class="exp-hl-badge-tag">日均 20+ 封</span>
+                </div>
+                <p class="exp-hl-desc">日均处理 20+ 封海外商务邮件，全英文对接日常越洋电话与视频会议；跟进询盘报价、订单履约跟踪与涉外客情维护，沉淀建立规范的海外重点客户档案与生命周期维护机制。</p>
+              </div>
+
+              <!-- Pillar 4 -->
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-3 3.86V14a5 5 0 0 0 3 4.58V20a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1.42A5 5 0 0 0 19 14v-3.14A4 4 0 0 0 16 7V6a4 4 0 0 0-4-4Z"/><path d="M9 12h6"/></svg>
+                  <span>AI 智能外贸工作流</span>
+                  <span class="exp-hl-badge-tag">人效提升超 50%</span>
+                </div>
+                <p class="exp-hl-desc">引入 Codex、ChatGPT 等工具构建智能化外贸工作流；定制结构化 Prompt 模板实现海外客商背景自动化背调、高转化开发信（Cold Email）智能撰写、合同多语种合规初审与市场分析，办公人效提升超 50%。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 经历二：个人教育工作室 -->
+          <div class="timeline-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="exp-head-row">
+              <div>
+                <h3 class="exp-company">个人教育工作室</h3>
+                <div class="exp-title-text">线上独立英语讲师</div>
+              </div>
+              <div class="exp-date-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>2024.01 - 2024.07</span>
+              </div>
+            </div>
+
+            <div class="exp-highlight-item" style="margin-top: 10px;">
+              <div class="exp-hl-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <span>个性化分层教学与课件自主研发</span>
+                <span class="exp-hl-badge-tag">累计授课 300+ 课时</span>
+              </div>
+              <p class="exp-hl-desc">
+                针对 5~25 岁不同年龄段学员（少儿启蒙、中高考/雅思提分、职场成人商务口语）自主研发模块化课件与模拟测验体系。累计高质量授课超 300 课时，采用沉浸启发式互动教学，保持优良的学员续费率与家庭信赖口碑。
+              </p>
+            </div>
+          </div>
+
+          <!-- 经历三：涉外翻译机构 / 线上平台 -->
+          <div class="timeline-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="exp-head-row">
+              <div>
+                <h3 class="exp-company">涉外翻译机构 / 线上平台</h3>
+                <div class="exp-title-text">高级笔译 / 本地化专员（兼职）</div>
+              </div>
+              <div class="exp-date-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>2024.01 - 2024.06</span>
+              </div>
+            </div>
+
+            <div class="exp-highlights-list" style="margin-top: 10px;">
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+                  <span>SCI 学术与涉外商务翻译</span>
+                  <span class="exp-hl-badge-tag">国际期刊发表级</span>
+                </div>
+                <p class="exp-hl-desc">承接技术规范、涉外商业合同等多品类英汉互译，累计高质量交付数万字；深度参与 <strong>SCI 发表级国际学术论文</strong>翻译与校对，助力论文顺利达到国际学术同行评审发表标准。</p>
+              </div>
+
+              <div class="exp-highlight-item">
+                <div class="exp-hl-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  <span>现代 CAT 与智能多轮质检</span>
+                  <span class="exp-hl-badge-tag">交付合格率 100%</span>
+                </div>
+                <p class="exp-hl-desc">熟练运用 CAT 工具结合 AI 辅助术语库对齐与多轮质检（QC），严控语境文化、语义精准度与地道表达，交付合格率保持 100%。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         板块 4：专业技能证书 SKILLS & CERTIFICATIONS
+    ================================================================== -->
+    <section id="skills" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            04 / SKILLS & CERTIFICATIONS
+          </div>
+          <h2 class="section-title">专业技能与权威证书</h2>
+          <p class="section-desc">以专业外语资质为基石，融合 AI 数字化工具与全链路外贸商务实操能力</p>
+        </div>
+
+        <div class="skills-grid-4">
+          <!-- 1. 语言资质 -->
+          <div class="skill-category-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">语言资质与认证</h3>
+                <div style="font-size:0.8rem; color:var(--color-primary-dark); font-weight:600;">权威语言等级 · 听读写译全能</div>
+              </div>
+            </div>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">专业英语八级证书 (TEM-8)</div>
+                  <div class="cert-detail">全国英语专业最高等级认证，具备高水平英语语篇理解与深度交传实战能力。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">剑桥商务英语中级证书 (BEC Vantage)</div>
+                  <div class="cert-detail">国际商业权威认证，精通涉外商务谈判、英文商务函电与跨国会议沟通。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">雅思考试 (IELTS) 6.5 分</div>
+                  <div class="cert-detail">扎实的听力、学术阅读与长文写作素养，可流利进行越洋电话与商务对接。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">普通话水平测试 · 二级甲等</div>
+                  <div class="cert-detail">发音纯正标准，声音温和清晰，具备极强的语言表达亲和力与沟通感染力。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. AI 与数字化技能 -->
+          <div class="skill-category-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-3 3.86V14a5 5 0 0 0 3 4.58V20a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1.42A5 5 0 0 0 19 14v-3.14A4 4 0 0 0 16 7V6a4 4 0 0 0-4-4Z"/><path d="M9 12h6"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">AI 与数字化技能</h3>
+                <div style="font-size:0.8rem; color:var(--color-primary-dark); font-weight:600;">前沿大模型落地 · 出海人效杠杆</div>
+              </div>
+            </div>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">提示词工程 (Prompt Engineering)</div>
+                  <div class="cert-detail">熟练运用 Codex、ChatGPT、Claude 等 AI 工具进行结构化指令设计与外贸任务建模。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">海外客商自动化背调与市场调研</div>
+                  <div class="cert-detail">擅长将 AI 赋能于海外市场情报调研、客商多维信用背景自动化挖掘与痛点提炼。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">高转化外贸开发信 (Cold Email)</div>
+                  <div class="cert-detail">结合客商行业动态，AI 智能定制针对性痛点商函，大幅提高海外询盘打开与回复率。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">多语种内容出海本土化 (Localization)</div>
+                  <div class="cert-detail">善于借助大模型与 CAT 辅助，实现品牌故事、产品资料的地道本地化转换。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 专业与外贸实操 -->
+          <div class="skill-category-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="m12 2 8 10H4z"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">专业与外贸实操</h3>
+                <div style="font-size:0.8rem; color:var(--color-primary-dark); font-weight:600;">进出口全链路 · 商务交传谈判</div>
+              </div>
+            </div>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">外贸进出口单证与函电规范</div>
+                  <div class="cert-detail">熟练掌握海运提单、商业发票、装箱单、海事环保商函撰写与国际结算全流程。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">初中英语教师资格证</div>
+                  <div class="cert-detail">具备国家教师资格认证，拥有深厚的信息传授、逻辑梳理与公众演示表达素养。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">外商验厂与高层商务交传口译</div>
+                  <div class="cert-detail">多次担任首席现场交传，精准把控环保合规、商务签约与关键技术条款无缝对接。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">重点海外客商 CRM 档案运营</div>
+                  <div class="cert-detail">标准化客户跟踪归档，定期越洋关怀回访，促成老客持续复购与转介绍合作。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 办公与软件设计 -->
+          <div class="skill-category-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">办公与图像处理</h3>
+                <div style="font-size:0.8rem; color:var(--color-primary-dark); font-weight:600;">精通 Office · 熟悉 Photoshop · CAT 辅助</div>
+              </div>
+            </div>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">精通 Microsoft Office 套件</div>
+                  <div class="cert-detail">Word 高级版式排版、Excel 复杂数据建模与出海业务统计、PowerPoint 商业路演提案。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">熟悉 Photoshop (PS) 图像处理</div>
+                  <div class="cert-detail">熟练制作海外产品详情图、产品画册轻量视觉排版及社媒出海宣传素材设计。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">现代计算机辅助翻译 (CAT) 工具</div>
+                  <div class="cert-detail">熟练运用术语对齐、记忆库建立与多模态质检流程，保证大体量涉外文件交付品质。</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="cert-name">数字协作与云端协同</div>
+                  <div class="cert-detail">熟练使用各类涉外云文档、海外即时通讯工具 (WhatsApp/WeChat/Zoom/Teams) 与协同看板。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         板块 5：核心竞争优势 CORE COMPETENCIES & COLLABORATION
+    ================================================================== -->
+    <section id="competencies" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            05 / CORE COMPETENCIES
+          </div>
+          <h2 class="section-title">核心竞争优势与价值壁垒</h2>
+          <p class="section-desc">融汇扎实的语言桥梁底功、数字时代的前沿生产力与跨界破局的实干韧劲</p>
+        </div>
+
+        <!-- 3 Core Competency Pillars -->
+        <div class="comp-grid-3">
+          <!-- Pillar 1 -->
+          <div class="comp-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="comp-num-pill">01</div>
+            <h3 class="comp-title">英语专八 + 商务实战<br>双核价值壁垒</h3>
+            <p class="comp-text">
+              具备极其扎实的语言基本功与高规格涉外现场交传口译实战能力；兼具客户开发、商务谈判到成单落地的外贸全链路经验，深刻理解海外客商沟通习惯与商业文化，跨文化沟通与同理心极强。
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="comp-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="comp-num-pill">02</div>
+            <h3 class="comp-title">敏锐的 AI 生产力与<br>数字化出海视野</h3>
+            <p class="comp-text">
+              深度探索并落地 Codex、ChatGPT 等新一代大模型工具在外贸实战中的应用场景。擅长运用 AI 杠杆赋能自动化背调、客情触达与商函质检，人效比远超传统业务员，以极具辨识度的数字效率驱动业务转化。
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="comp-card glass-card">
+            <div class="card-glow-decor"></div>
+            <div class="comp-num-pill">03</div>
+            <h3 class="comp-title">卓越的快速学习与<br>跨界攻坚突破力</h3>
+            <p class="comp-text">
+              敢于攻坚技术门槛高的陌生垂直领域，曾跨界突破船舶海事重工与油污水航运环保行业，在极短时间内吃透技术参数与行业规范，为企业促成关键国际合作并直接创造 10 万+ 净效益，抗压能力强，注重结果落地。
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Contact & Collaboration Lounge (合作与联系板块) -->
+        <div id="contact-lounge" class="collab-lounge-card glass-card">
+          <div class="card-glow-decor"></div>
+          <!-- Left Col -->
+          <div class="lounge-info-side">
+            <div class="hero-pill-badge" style="margin-bottom: 16px;">
+              <span class="pulse-dot"></span>
+              开放多元合作 · 期待携手同行
+            </div>
+            <h3 class="lounge-title">随时开启涉外合作与交流</h3>
+            <div class="lounge-quote">
+              “让每一次跨文化连接，都充满温韧、诚挚与商业确定性。”
+            </div>
+
+            <div class="lounge-contact-list">
+              <div class="lounge-contact-item" onclick="copyText('19867005820', '电话/微信已复制到剪贴板！')" title="点击一键复制">
+                <div class="lounge-item-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="lounge-item-label">联系电话 / 微信 (WeChat)</div>
+                  <div class="lounge-item-val">19867005820 <span style="font-size:0.75rem; font-weight:normal; color:var(--color-primary-dark); margin-left:6px;">[点击复制]</span></div>
+                </div>
+              </div>
+
+              <div class="lounge-contact-item" onclick="copyText('2503420181@qq.com', '工作邮箱已复制到剪贴板！')" title="点击一键复制">
+                <div class="lounge-item-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <div class="lounge-item-label">工作电子邮箱 (Email)</div>
+                  <div class="lounge-item-val">2503420181@qq.com <span style="font-size:0.75rem; font-weight:normal; color:var(--color-primary-dark); margin-left:6px;">[点击复制]</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Col: Interactive Collaboration Form -->
+          <div class="lounge-form-side">
+            <form class="collab-form" id="collab-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-title">发送合作或咨询意向</div>
+              <div class="form-group">
+                <label class="form-label">您的姓名 / 机构称谓</label>
+                <input type="text" class="form-input" id="form-name" placeholder="例如：李先生 / 某跨境出海企业" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">您的联系方式 (手机 / 微信 / 邮箱)</label>
+                <input type="text" class="form-input" id="form-contact" placeholder="例如：138xxxxxxx / wechat_id" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">意向合作类别</label>
+                <select class="form-select" id="form-type">
+                  <option value="外贸业务合作与海外客户开发">外贸业务合作与海外客户开发</option>
+                  <option value="涉外商务交传口译与现场商务谈判">涉外商务交传口译与现场商务谈判</option>
+                  <option value="AI 智能外贸工作流落地探讨">AI 智能外贸工作流落地探讨</option>
+                  <option value="SCI 论文 / 商业合同学术翻译">SCI 论文 / 商业合同学术翻译</option>
+                  <option value="其他合作机会或职位交流">其他合作机会或职位交流</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">合作意向简述</label>
+                <textarea class="form-textarea" id="form-desc" placeholder="简要描述您的需求或希望交流的细节..." rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+                <span>提交合作意向</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-text">
+        © 2026 吴嘉琪 (Jiaqi Wu) · 个人简介网站 · 版权所有
+      </div>
+      <div class="footer-tags">
+        <span>森系自然清新</span>
+        <span>·</span>
+        <span>生命力与治愈感</span>
+        <span>·</span>
+        <span>涉外商贸与数字化出海</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast-box">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toast-msg">复制成功</span>
+  </div>
+
+
+  <script>
+// =================================================================
+// 0. TOAST NOTIFICATION
+// =================================================================
+let toastTimer = null;
+function showToast(msg) {
+  const toast = document.getElementById('toast-box');
+  const msgEl = document.getElementById('toast-msg');
+  if (!toast || !msgEl) return;
+  msgEl.innerText = msg;
+  toast.classList.add('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2600);
+}
+
+function copyText(text, successMsg) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast(successMsg || '已复制到剪贴板');
+    }).catch(() => {
+      fallbackCopy(text, successMsg);
+    });
+  } else {
+    fallbackCopy(text, successMsg);
+  }
+}
+
+function fallbackCopy(text, successMsg) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast(successMsg || '已复制到剪贴板');
+  } catch (err) {
+    showToast('请手动复制：' + text);
+  }
+  document.body.removeChild(ta);
+}
+
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('form-name').value;
+  const contact = document.getElementById('form-contact').value;
+  const type = document.getElementById('form-type').value;
+  showToast('感谢 ' + (name || '您') + ' 的关注！意向已记录，将通过 ' + (contact || '联系方式') + ' 与您取得联系。');
+  document.getElementById('collab-form').reset();
+}
+
+// =================================================================
+// 1. CUSTOM FOREST CURSOR
+// =================================================================
+const cursorDot = document.getElementById('cursor-dot');
+const cursorRing = document.getElementById('cursor-ring');
+let mouseX = -100, mouseY = -100;
+let ringX = -100, ringY = -100;
+
+window.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursorDot.style.left = mouseX + 'px';
+  cursorDot.style.top = mouseY + 'px';
+});
+
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.18;
+  ringY += (mouseY - ringY) * 0.18;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+const interactiveEls = document.querySelectorAll('a, button, input, textarea, select, .copy-chip, .lounge-contact-item, .glass-card, .metric-box, .course-tag');
+interactiveEls.forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+});
+
+// =================================================================
+// 2. SCROLL PROGRESS & NAVBAR SPY
+// =================================================================
+const scrollProgress = document.getElementById('scroll-progress');
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  if (scrollProgress) {
+    scrollProgress.style.width = Math.min(100, Math.max(0, progress)) + '%';
+  }
+
+  // Active section spy
+  let currentSec = '';
+  sections.forEach(sec => {
+    const secTop = sec.offsetTop - 120;
+    if (scrollTop >= secTop) {
+      currentSec = sec.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + currentSec) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// =================================================================
+// 3. FALLING LEAVES CANVAS PARTICLES
+// =================================================================
+const canvas = document.getElementById('leaves-canvas');
+const ctx = canvas.getContext('2d');
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+window.addEventListener('resize', () => {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+});
+
+const leafColors = [
+  'rgba(34, 197, 94, 0.45)',
+  'rgba(16, 185, 129, 0.38)',
+  'rgba(52, 211, 153, 0.42)',
+  'rgba(110, 231, 183, 0.35)',
+  'rgba(253, 224, 71, 0.28)'
+];
+
+const leaves = [];
+const LEAF_COUNT = 24;
+
+for (let i = 0; i < LEAF_COUNT; i++) {
+  leaves.push({
+    x: Math.random() * width,
+    y: Math.random() * height - height,
+    size: 9 + Math.random() * 12,
+    speedY: 0.6 + Math.random() * 0.9,
+    speedX: -0.3 + Math.random() * 0.6,
+    angle: Math.random() * Math.PI * 2,
+    angleSpeed: (Math.random() - 0.5) * 0.02,
+    color: leafColors[Math.floor(Math.random() * leafColors.length)],
+    swingPhase: Math.random() * Math.PI * 2
+  });
+}
+
+function drawLeaf(l) {
+  ctx.save();
+  ctx.translate(l.x, l.y);
+  ctx.rotate(l.angle);
+  ctx.fillStyle = l.color;
+  ctx.beginPath();
+  // Draw an organic leaf shape
+  ctx.moveTo(0, -l.size);
+  ctx.bezierCurveTo(l.size * 0.75, -l.size * 0.4, l.size * 0.75, l.size * 0.4, 0, l.size);
+  ctx.bezierCurveTo(-l.size * 0.75, l.size * 0.4, -l.size * 0.75, -l.size * 0.4, 0, -l.size);
+  ctx.fill();
+
+  // Gentle center vein
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(0, -l.size * 0.8);
+  ctx.lineTo(0, l.size * 0.8);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function updateLeaves() {
+  ctx.clearRect(0, 0, width, height);
+  for (let l of leaves) {
+    l.y += l.speedY;
+    l.swingPhase += 0.02;
+    l.x += l.speedX + Math.sin(l.swingPhase) * 0.45;
+    l.angle += l.angleSpeed;
+
+    if (l.y > height + 20) {
+      l.y = -20;
+      l.x = Math.random() * width;
+    }
+    if (l.x < -20) l.x = width + 20;
+    if (l.x > width + 20) l.x = -20;
+
+    drawLeaf(l);
+  }
+  requestAnimationFrame(updateLeaves);
+}
+updateLeaves();
+
+// =================================================================
+// 4. NATURAL BREEZE AUDIO SYNTHESIZER (PURE WEB AUDIO API)
+// =================================================================
+let audioCtx = null;
+let noiseNode = null;
+let gainNode = null;
+let filterNode = null;
+let lfoOsc = null;
+let isPlaying = false;
+
+const soundBtn = document.getElementById('sound-toggle-btn');
+const soundBtnText = document.getElementById('sound-btn-text');
+
+function toggleSound() {
+  if (!isPlaying) {
+    startBreeze();
+  } else {
+    stopBreeze();
+  }
+}
+
+function startBreeze() {
+  try {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) {
+      showToast('当前浏览器不支持 Web Audio');
+      return;
+    }
+    audioCtx = new AudioContextClass();
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+
+    // Generate 4-second pink-like noise buffer
+    const bufferSize = audioCtx.sampleRate * 3;
+    const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const output = noiseBuffer.getChannelData(0);
+    let b0 = 0, b1 = 0, b2 = 0;
+    for (let i = 0; i < bufferSize; i++) {
+      const white = Math.random() * 2 - 1;
+      b0 = 0.99886 * b0 + white * 0.0555179;
+      b1 = 0.99332 * b1 + white * 0.0750759;
+      b2 = 0.96900 * b2 + white * 0.1538520;
+      output[i] = (b0 + b1 + b2) * 0.18;
+    }
+
+    noiseNode = audioCtx.createBufferSource();
+    noiseNode.buffer = noiseBuffer;
+    noiseNode.loop = true;
+
+    // Filter for gentle breeze
+    filterNode = audioCtx.createBiquadFilter();
+    filterNode.type = 'lowpass';
+    filterNode.frequency.setValueAtTime(320, audioCtx.currentTime);
+    filterNode.Q.setValueAtTime(1.8, audioCtx.currentTime);
+
+    // LFO to modulate filter frequency naturally like rolling wind
+    lfoOsc = audioCtx.createOscillator();
+    const lfoGain = audioCtx.createGain();
+    lfoOsc.frequency.setValueAtTime(0.2, audioCtx.currentTime);
+    lfoGain.gain.setValueAtTime(160, audioCtx.currentTime);
+    lfoOsc.connect(filterNode.frequency);
+    lfoOsc.start();
+
+    // Master volume gain
+    gainNode = audioCtx.createGain();
+    gainNode.gain.setValueAtTime(0.01, audioCtx.currentTime);
+    gainNode.gain.linearRampToValueAtTime(0.25, audioCtx.currentTime + 1.5);
+
+    noiseNode.connect(filterNode);
+    filterNode.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+
+    noiseNode.start();
+    isPlaying = true;
+    soundBtn.classList.add('playing');
+    soundBtnText.innerText = '微风轻拂中';
+    showToast('已开启森系微风自然白噪音');
+  } catch (err) {
+    console.error(err);
+    showToast('音效启动失败，请检查浏览器权限');
+  }
+}
+
+function stopBreeze() {
+  if (gainNode && audioCtx) {
+    gainNode.gain.linearRampToValueAtTime(0.01, audioCtx.currentTime + 0.5);
+    setTimeout(() => {
+      try {
+        if (noiseNode) noiseNode.stop();
+        if (lfoOsc) lfoOsc.stop();
+        if (audioCtx) audioCtx.close();
+      } catch(e) {}
+      isPlaying = false;
+      soundBtn.classList.remove('playing');
+      soundBtnText.innerText = '自然白噪音';
+      showToast('已静音白噪音');
+    }, 500);
+  }
+}
+
+if (soundBtn) {
+  soundBtn.addEventListener('click', toggleSound);
+}
+
+// =================================================================
+// 5. 3D TILT EFFECT ON CARDS
+// =================================================================
+const tiltCards = document.querySelectorAll('.glass-card, .metric-box, .comp-card');
+tiltCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const deltaX = (x - centerX) / centerX;
+    const deltaY = (y - centerY) / centerY;
+    card.style.transform = `perspective(800px) rotateX(${-deltaY * 3}deg) rotateY(${deltaX * 3}deg) translateY(-4px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+  </script>
+</body>
+</html>
